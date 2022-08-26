@@ -10,5 +10,5 @@
 ```
 git clone https://github.com/stevensikorski/macos-system-info.git
 cd macos-system-info
-./macos-system-info
+./run
 ```
