@@ -133,5 +133,5 @@ class Window:
 def main():
     Container = Window(800, 600)
 
-if __name__ == "main":
+if __name__ == "__main__":
     main()
