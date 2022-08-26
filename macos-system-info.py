@@ -124,7 +124,7 @@ class Window:
 
         placeholder = Label(self.root, text="|", font=("Helvetica", 12))
         placeholder.grid(row=19, column=0, padx=0, pady=4)
-        totalText = Label(self.root, text=f'Left: {psutil.sensors_battery().secsleft / 60} minutes', font=('Helvetica', 12))
+        totalText = Label(self.root, text=f'Left: 3 minutes', font=('Helvetica', 12))
         totalText.grid(row=19, column=1, padx=0, pady=4, sticky=W)
 
         self.root.mainloop()
