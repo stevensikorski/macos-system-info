@@ -130,4 +130,8 @@ class Window:
 
         self.root.mainloop()
 
-Container = Window(800, 600)
+def main():
+    Container = Window(800, 600)
+
+if __name__ == "main":
+    main()
