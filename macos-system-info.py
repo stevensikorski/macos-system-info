@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from tkinter import *
 from PIL import ImageTk, Image
 from Foundation import NSBundle
@@ -105,7 +107,6 @@ class Window:
         placeholder.grid(row=15, column=0, padx=4, pady=4)
 
         # Battery Information
-
         batteryIcon = Label(self.root, image=siImage, height=20, width=20)
         batteryIcon.grid(row=16, column=0, padx=4, pady=4)
         batteryTitle = Label(self.root, text='Battery Information', font=('Helvetica bold', 12))
@@ -118,7 +119,7 @@ class Window:
 
         placeholder = Label(self.root, text="|", font=("Helvetica", 12))
         placeholder.grid(row=18, column=0, padx=0, pady=4)
-        totalText = Label(self.root, text=f'Plugged: {psutil.sensors_battery().power_plugged}', font=('Helvetica', 12))
+        totalText = Label(self.root, text=f'Charging: {psutil.sensors_battery().power_plugged}', font=('Helvetica', 12))
         totalText.grid(row=18, column=1, padx=0, pady=4, sticky=W)
 
         placeholder = Label(self.root, text="|", font=("Helvetica", 12))
